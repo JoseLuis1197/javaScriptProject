@@ -1,25 +1,19 @@
-//create a task object
-/*
-var task = {};
+//create a constructor function
 
-task.title = "My task";
-task.description = "My description";
-task.toString = function(){
-    return this.title + " " + this.description;        
-}
-
-console.log(task.toString());
-
-*/
-
-//create a task object
-
-var task = {
-    title : "My task",
-    description : "My description",
-    toString : function(){
-    return this.title + " " + this.description 
-    }    
+var task = function(name){
+    this.name = name;
+    this.completed = false;             
 };
-    
-console.log(task.toString());
+
+task.prototype.complete = function(){
+        console.log("completing task: " + this.name);
+        this.completed = true;
+};  
+
+task.prototype.save = function(){
+        console.log("saving task: " + this.name);            
+};
+
+
+module.exports = task;
+

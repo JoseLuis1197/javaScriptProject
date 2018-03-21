@@ -15,7 +15,9 @@ After declaring your object you could add keys and values as follow:
     obj["param"] = "new value";
     
 # Constructor pattern
-Using JavaScript, you could create objects with a function. This is called a constructor.
+Using JavaScript, you could create objects with a function. This is called a constructor. 
+
+The name of the function is going to be our object name.
 
 Example:
 
