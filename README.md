@@ -21,7 +21,8 @@ The name of the function is going to be our object name.
 
 Example:
 
-    ```javascript
+    '''javascript
+    
     function ObjectName(param1,param2){
         this.param1 = param1;
         this.param2 = param2;
@@ -29,7 +30,8 @@ Example:
             return this.param1 + '' + this.param2;
         }    
     }
-    ```
+    
+    '''
 # Module pattern
 A module pattern is an object that encapsulates a group of similar methods.
 
