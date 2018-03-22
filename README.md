@@ -30,8 +30,8 @@ Example:
             return this.param1 + '' + this.param2;
         }    
     }
-    
     '''
+    
 # Module pattern
 A module pattern is an object that encapsulates a group of similar methods.
 
