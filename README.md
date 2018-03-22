@@ -29,5 +29,13 @@ Example:
         }    
     }
 
+# Module pattern
+A module pattern is an object that encapsulates a group of similar methods.
 
+Example:
 
+    var module = {
+        method: function(){.....},
+        nextMethod: function(){.....}
+    
+    }
