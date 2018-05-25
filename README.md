@@ -1,45 +1,14 @@
-# javaScriptProject
+# Angular Event Registration — Demo Application for Angular JS
 
-You could declare objects using these three ways:
+This project is a sample application demonstrating a more fully developed realistic single page
+angular application.
 
-1) var obj = {};
-2) var nextObject = Object.create(Object.prototype);
-3) var lasObject = new Object();
+### Server
 
-After declaring your object you could add keys and values as follow:
+Two Servers are provided, an ASP.NET MVC server, and a node server. If using the ASP.NET server, simply start it up in IIS. If using the node server, from the command line run "npm install" and then either "server.sh" if you are on a linux box or "server.bat" if you are on a windows box.
 
-1) Dot notation
+### Running the application
 
-    obj.param = "new value";
-    
-    obj["param"] = "new value";
-    
-# Constructor pattern
-Using JavaScript, you could create objects with a function. This is called a constructor. 
+Navigate your browser to `http://localhost:8000/` to see the app running in your browser. You may have to add the page to the url such as EventDetails.html depending on where you are at in the course. The port may be configured either in the node server or on IIS.
 
-The name of the function is going to be our object name.
 
-Example:
-
-    '''javascript
-    
-    function ObjectName(param1,param2){
-        this.param1 = param1;
-        this.param2 = param2;
-        this.toString = function(){
-            return this.param1 + '' + this.param2;
-        }    
-    }
-    
-    '''
-# Module pattern
-A module pattern is an object that encapsulates a group of similar methods.
-
-Example:
-
-    ```javascript
-    var module = {
-        method: function(){.....},
-        nextMethod: function(){.....}    
-    }
-    ```
